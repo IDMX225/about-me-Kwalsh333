@@ -131,6 +131,94 @@ h1, h2 {
     color: #333;
 }
 
+/* Contact Section Styling */
+#contact {
+    background-color: #f2f2f2;
+    padding: 30px 20px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact fieldset {
+    border: 2px solid #68E89B;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#contact legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #68E89B;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact select,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+}
+
+#contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact li {
+    margin-bottom: 10px;
+}
+
+#contact input[type="radio"] {
+    margin-right: 10px;
+}
+
+#contact button[type="submit"] {
+    background-color: #68E89B;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Roboto Mono", monospace;
+    transition: background-color 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #56c687;
+}
+
 /* Tab breakpoint */
 @media screen and (min-width: 60em) {
     /* Photo gallery layout changes for tablet screen */
@@ -151,10 +239,14 @@ h1, h2 {
         margin-left: 1rem;
     }
 
-    /* Multi-columns for literature section */
+    /
     #lit {
         columns: 40rem;
         max-width: 100%;
+    }
+
+    #contact {
+        width: 75%;
     }
 }
 
@@ -174,6 +266,10 @@ h1, h2 {
     #photo-gallery figure {
         display: block;
     }
+
+    #contact {
+        width: 60%;
+    }
 }
 
 /* drop caps */
@@ -185,6 +281,7 @@ article p::first-letter {
     color: #333;
     line-height: 1;
 }
+
 /* Article Section */
 article {
     width: 80%;

@@ -86,6 +86,46 @@
         <figcaption>My favortie photos</figcaption>
     </figure>
 </section>
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="About me Form" value="contact">
+        
+        <fieldset>
+            <legend>Contact Form</legend>
+
+            <label for="name">Name: <input type="text" name="name" id="name" required></label><br>
+            <label for="email">Email: <input type="email" name="email" id="email" required></label><br>
+            <label for="phone">Phone: <input type="tel" name="phone" id="phone"></label><br>
+            
+            <label for="phone-type">Phone Type:
+                <select name="phone-type" id="phone-type">
+                    <option value="">Select one</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="home">Home</option>
+                    <option value="work">Work</option>
+                </select>
+            </label><br>
+
+            <label for="message">Message:<br>
+                <textarea name="message" id="message" rows="4" cols="50"></textarea>
+            </label><br>
+
+            <ul>
+                <li>
+                    <label><input type="radio" name="followup" value="yes"> Yes, follow up</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="followup" value="no"> No, thank you</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
 
 </main>
     <!-- Article Section -->

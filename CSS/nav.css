@@ -1,68 +1,94 @@
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #444;
-    padding: 10px 20px;
-    flex-wrap: wrap;
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+/* Logo styling */
 .navbar .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .navbar .logo img {
-    width: 60px;
-    height: auto;
+  width: 60px;
+  height: auto;
 }
 
 .navbar .logo h1 {
-    margin: 0;
-    color: white;
-    font-family: "Playwrite IT Moderna", sans-serif;
+  margin: 0;
+  color: white;
+  font-family: "Playwrite IT Moderna", sans-serif;
 }
 
+/* Navbar links */
 .navbar-links ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .navbar-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-family: "Roboto Mono", monospace;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-    color: #68E89B;
+  color: #68E89B;
 }
+
+/* Responsive stack for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-links a {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
 /* Wide screen breakpoint */
 @media screen and (min-width: 100em) {
-    .navbar {
-      justify-content: space-between;
-      padding: 2rem 6rem;
-    }
-  
-    .navbar .logo h1 {
-      font-size: 2.5rem;
-    }
-  
-    .navbar-links ul {
-      gap: 3rem;
-    }
-  
-    .navbar-links a {
-      font-size: 1.2rem;
-    }
+  .navbar {
+    justify-content: space-between;
+    padding: 2rem 6rem;
   }
-  
 
+  .navbar .logo h1 {
+    font-size: 2.5rem;
+  }
+
+  .navbar-links ul {
+    gap: 3rem;
+  }
+
+  .navbar-links a {
+    font-size: 1.2rem;
+  }
+}

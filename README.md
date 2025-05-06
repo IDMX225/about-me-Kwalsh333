@@ -1,7 +1,7 @@
 # README
 
 Kevin Walsh
-
+About me Prokect
 [![Netlify Status](https://api.netlify.com/api/v1/badges/17750453-7019-48c0-b5c6-9cc956634b1c/deploy-status)](https://app.netlify.com/sites/kevinwalsh-aboutme/deploys)
 
 ## Project Overview
@@ -26,7 +26,7 @@ This project contains original content, with the exception of the following exte
   - Avatar generated using [avataaars.io](https://avataaars.io/)
 - **CSS References**:
   - [W3Schools](https://www.w3schools.com/) and [MDN Web Docs](https://developer.mozilla.org/) for syntax help.
-
+Sources for blog article:MDN Web Docs:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations,W3Schools:https://www.w3schools.com/css/css3_animations.asp, ThemeIsle and CSS-Tricks
 
 ## license ##
 I reserve the rights to this project.

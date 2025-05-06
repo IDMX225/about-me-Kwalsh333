@@ -32,3 +32,9 @@ This project contains original content, with the exception of the following exte
 I reserve the rights to this project.
 
 
+## Future Improvements
+
+- Add a dark/light theme toggle
+- Optimize images and videos for performance
+- Improve form validation and interactivity with JavaScript
+- Add animations for section transitions and logo
